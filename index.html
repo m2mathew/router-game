@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Router Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/styles/main.sass.css">
+</head>
+<body>
+
+    <nav id="menu-screen">
+        <a href="#play" id="play-button">PLAY</a>
+        <a href="#leaders" id="leaderboard-button">LEADERBOARD</a>
+        <a href="#settings" id="settings-button">SETTINGS</a>
+    </nav>
+
+    <section id="loading-screen">
+        <div id="loading-box">
+            <div id="loading-message">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="game-screen">
+        <div>
+            <p>Game will be played here!</p>
+        </div>
+    </section>
+
+    <section id="leaderboard-screen">
+        <div>
+            <p>Leaders displayed here!</p>
+        </div>
+    </section>
+
+    <section id="settings-screen">
+        <div>
+            <p>Setting accessed here!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>A creation by</span>
+        <a href="http://www.drumsensei.com">Mike Mathew</a>
+        <span>for</span>
+        <a href="http://www.theironyard.com">The Iron Yard</a>
+    </footer>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="/node_modules/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
