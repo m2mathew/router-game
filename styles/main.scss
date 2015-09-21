@@ -1,3 +1,5 @@
+@import 'normalize.scss';
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eee;
@@ -9,16 +11,25 @@ a {
     color: #000;
 }
 
+section {
+    text-align: center;
+}
+
 #menu-screen {
-    padding: 5em 2em;
+    padding: 6em 2em;
+    padding-left: 4em;
     background-color: #fff;
     background: url(/images/ad.png) no-repeat;
     background-position: 98% 90%;
     background-size: 20em;
+    border-bottom: 2px solid #ddd;
+    border-shadow: 2px 2px 4px #555;
 
     #play-button, #leaderboard-button, #settings-button {
         padding: 0.5em;
         border: 4px groove #E92F3B;
+        margin-left: 0.5em;
+        opacity: 1;
 
         &:hover, &:focus {
             background-color: #E73C4E;
@@ -28,13 +39,14 @@ a {
 }
 
 #loading-screen {
-    padding: 5em 0 5em 2em;
+    background: url(/images/frozen1.jpg) no-repeat;
+    padding: 6em 0 6em 2em;
     background-color: #fff;
     font-weight: bold;
 
     #loading-box {
         width: 20em;
-        background-color: #E92F3B;
+        background-color: #436C9D;
         padding: 1em;
         margin: 0 auto;
 
@@ -47,25 +59,45 @@ a {
 }
 
 #game-screen {
-    padding: 5em 0 5em 2em;
+    height: 40em;
+    padding: 2em 0 5em 2em;
     background-color: #fff;
+    background: url(/images/ad-characters.jpg) no-repeat center;
+    background-size: contain;
+    background-position: 0 100%;
+
 }
 
 #leaderboard-screen {
-    padding: 5em 0 5em 2em;
+    height: 40em;
+    padding: 2em 0 5em 2em;
     background-color: #fff;
+    background: url(/images/previously.png) no-repeat center;
+    background-size: contain;
+    background-position: 0 100%;
+
+
+    ol {
+        padding-left: 5em;
+        text-align: left;
+        font-size: 1.25em;
+    }
 }
 
 #settings-screen {
-    padding: 5em 0 5em 2em;
-    background-color: #fff;
+    height: 40em;
+    padding: 2em 0 5em 2em;
+    background-color: transparent;
+    background: url(/images/hop-ons.jpg) no-repeat center;
+    background-size: contain;
 }
 
 .footer {
     background-color: #222;
     color: #ccc;
     font-size: 0.8em;
-    padding: 1em 0 5em 1em;
+    padding: 5em 2em 2em 2em;
+    text-align: right;
 
     a {
         text-decoration: none;
