@@ -1,5 +1,9 @@
 # Router Game
 
+Assignment from The Iron Yard-Austin
+
+Week 5 - day 17
+
 ## Description
 
 Create the skeleton of a web based game
