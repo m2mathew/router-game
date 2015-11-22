@@ -3,7 +3,6 @@
 $(document).ready(function(){
 
     var Router = Backbone.Router.extend({
-
         routes: {
             'play': 'goPlay',
             'leaders': 'getLeaders',
@@ -50,7 +49,7 @@ $(document).ready(function(){
 
 var showLoadingDots = function() {
     var showDots = setInterval(function(){
-        if ($('#loading-text').length>0) {
+        if ($('#loading-text').length > 0) {
             var dots = '...', i=1;
         if ($('#loading-text').html().length === 0 || ($('#loading-text').html().length === dots.length)){
             $('#loading-text').html('');
