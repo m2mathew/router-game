@@ -4,7 +4,6 @@
 $(document).ready(function () {
 
     var Router = Backbone.Router.extend({
-
         routes: {
             'play': 'goPlay',
             'leaders': 'getLeaders',
@@ -65,6 +64,5 @@ var showLoadingDots = function showLoadingDots() {
 };
 
 },{}]},{},[1])
-
 
 //# sourceMappingURL=bundle.js.map
